@@ -20,7 +20,7 @@ local shell = require("shell")
 
 local xScr, yScr = gpu.getResolution()
 local xCen, yCen = math.ceil(xScr/2), math.ceil(yScr/2)
-local linedwn = "     ZX Spectrum 128"
+local linedwn = "ZX Spectrum 128"
 local clr = {
   yellow = 0xf8f32b,
   white = 0xFFFFFF,
@@ -109,7 +109,7 @@ print ("║0 Off shell   ║")
 term.setCursor (xCen-8, yCen+5)
 print ("╚══════════════╝")
 term.setCursor (xCen - (string.len(linedwn)/2)+2, yScr)
-print (string.sub(linedwn,1,xScr-9).." 2019")
+print (string.sub(linedwn,1,xScr-9))
 shell.execute("cd //")
 end
 os.sleep(0.1)

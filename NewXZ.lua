@@ -20,7 +20,7 @@ local shell = require("shell")
 
 local xScr, yScr = gpu.getResolution()
 local xCen, yCen = math.ceil(xScr/2), math.ceil(yScr/2)
-local linedwn = "  Design by MineCR (Valenian comp.) - ZX Spectrum 128"
+local linedwn = "     ZX Spectrum 128"
 local clr = {
   yellow = 0xf8f32b,
   white = 0xFFFFFF,

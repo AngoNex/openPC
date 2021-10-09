@@ -4,7 +4,7 @@
 --   / //\ /  \\__ \ |_) |  __/ (__ 
 --  /____//_/\_\___/ .__/ \___|\___|
 --                 |_|              
--- by MineCR '19
+
 
 local event = require("event")
 local component = require("component")
@@ -129,9 +129,7 @@ local eventname, _, char, code = event.pull('key_down')
 	   elseif code == keys.tri then
 	   shell.execute("hlplua.lua")
        elseif code == keys.fo then
-        term.clear()
-       os.exit()
-        shell.execute("openfetch.lua")
+        shell.execute("OpenFetchOpen.lua")
        elseif code == keys.five then
         shell.execute("shutdown")
        elseif code == keys.six then

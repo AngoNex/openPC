@@ -129,6 +129,8 @@ local eventname, _, char, code = event.pull('key_down')
 	   elseif code == keys.tri then
 	   shell.execute("hlplua.lua")
        elseif code == keys.fo then
+        term.clear()
+       os.exit()
         shell.execute("openfetch.lua")
        elseif code == keys.five then
         shell.execute("shutdown")
